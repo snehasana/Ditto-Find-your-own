@@ -24,11 +24,11 @@ mongoose.connect(connection_url, {
 // API Endpoints
 // ## go root url, callback func
 app.get("/", (req, res) => {
-  res.status(200).send("HELLO WORLD!!!");
+  res.status(200).send("HELLO !!!");
 });
 
 // add data to db, endpoint /tinder/card
-app.post("/DittoCards", (req, res) => {
+app.post("/ditto/Cards", (req, res) => {
   // save request body into a var
   const dbCard = req.body;
   //   function to create a new document
@@ -42,7 +42,7 @@ app.post("/DittoCards", (req, res) => {
 
 // another endpoint (the same) which will download data from the db
 // with this will be retrieving every single thing from the collection DB that we just created
-app.get("/DittoCards", (req, res) => {
+app.get("/ditto/Cards", (req, res) => {
   //   function to find a card
   Cards.find((err, data) => {
     // if there is error
