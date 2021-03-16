@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  border-bottom: 1px solid #f9f9f9;
+  background-color: aqua;
+}
+
+.header__logo {
+  object-fit: contain;
+  height: 80px;
+}
+
+.header__icon {
+  padding: 10px;
+  margin: 0 5px;
+  margin-top: 0px;
+  width: 90px;
+  justify-content: center;
+}
